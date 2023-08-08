@@ -1,0 +1,42 @@
+Algoritmo "somador_enquanto_repita"
+
+Var
+   n, cont, s: inteiro
+   resp: caractere
+
+Inicio
+//Estrutura de repetição usando "Enquanto"
+    s <- 0
+    cont <- 1
+    enquanto (cont <= 5) faca
+             escreva ("Digite o valor ==>")
+             leia(n)
+             s <- s + n
+             cont <- cont + 1
+    FimEnquanto
+    escreval("A soma de todos os valores digitados é ", s)
+
+//somar quando a pessoa falar sim ou não
+    s <- 0
+    resp <- "s"
+    enquanto (resp = "s") faca
+             escreva("Digite o valor ==>")
+             leia(n)
+             s <- s + n
+             escreva("Você quer continuar? [s/n] ")
+             leia(resp)
+    FimEnquanto
+    escreval("A soma de todos os valores digitados é ", s)
+    
+//Estrutura de repeticão usando "Repita"
+    s <- 0
+    Repita
+          escreva("Digite um valor ==>")
+          leia(n)
+          s <- s + n
+          escreva("Você quer continuar? [s/n] ")
+          leia(resp)
+    Ate (resp = "n")
+    escreval("A soma de todos os valores digitados é ", s)
+
+Fimalgoritmo
