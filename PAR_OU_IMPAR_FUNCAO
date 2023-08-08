@@ -1,0 +1,22 @@
+Algoritmo "Par_ou_Impar_funcao"
+
+Var
+n: inteiro
+r: caractere
+
+Funcao ParOuImpar(v: inteiro): caractere
+inicio
+      Se (v % 2 = 0) entao
+         Retorne "PAR"
+      senao
+           Retorne "IMPAR"
+      FimSe
+FimFuncao
+
+Inicio
+      escreva("Digite um número: ")
+      leia(n)
+      r <- ParOuImpar(n)
+      escreva("O número ", n, " é um valor ", r)
+
+Fimalgoritmo
