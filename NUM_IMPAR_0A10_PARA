@@ -1,0 +1,39 @@
+Algoritmo "num_impar_0a10_para"
+
+Var
+    c, n, Tot010, simp: inteiro
+
+Inicio
+      Tot010 <- 0
+      simp <- 0
+      Para c <- 1 ate 6 faca
+           escreva("Digite um número: ")
+           leia(n)
+           Se (n >= 0) e (n <= 10) entao
+              Tot010 <- Tot010 + 1
+              Se (n % 2 = 1) entao
+                 simp <- simp + n
+              FimSe
+           FimSe
+      FimPara
+      escreval("Ao todo foram ", Tot010, " valores entre 0 e 10.")
+      escreval("Nesse intervalo a soma de números impares foi ", simp, ".")
+
+//para somar os números impares fora da margem de 0 a 10
+       Tot010 <- 0
+       simp <- 0
+       Para c <- 1 ate 6 faca
+           escreva("Digite um número: ")
+           leia(n)
+           Se (n >= 0) e (n <= 10) entao
+              Tot010 <- Tot010 + 1
+           FimSe
+       Se (n % 2 = 1) entao
+          simp <- simp + n
+       FimSe
+       FimPara
+       escreval("Ao todo foram ", Tot010, " valores entre 0 e 10.")
+       escreval("Nesse intervalo a soma de números impares foi ", simp, ".")
+
+
+Fimalgoritmo
