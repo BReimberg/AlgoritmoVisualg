@@ -1,0 +1,36 @@
+Algoritmo "veotres_pares"
+
+Var
+  valor: vetor[1..7] de inteiro
+  c, totalpar: inteiro
+
+Inicio
+//Ler 7 valores e mostrar quantos são pares
+
+    //totalpar <- 0
+    //Para c <- 1 ate 5 faca
+         //escreva("Digite o ", c, "o. valor: ")
+         //leia(valor[c])
+         //Se (valor[c] % 2 = 0) entao
+            //totalpar <- totalpar + 1
+         //FimSe
+    //FimPara
+    //escreval("O total de números pares foi ", totalpar)
+
+//Ler 7 valores, mostrar quantos são pares e as posições dos valores
+
+    totalpar <- 0
+    Para c <- 1 ate 7 faca
+         escreva("Digite o ", c, "o. valor: ")
+         leia(valor[c])
+    FimPara
+    
+    Para c <- 1 ate 7 faca
+           Se (valor[c] % 2 = 0) entao
+              totalpar <- totalpar + 1
+                escreval("Valor PAR na posição ", c)
+           FimSe
+    FimPara
+    escreval("O total de números pares foi ", totalpar)
+
+Fimalgoritmo
