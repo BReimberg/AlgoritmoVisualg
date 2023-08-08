@@ -1,0 +1,23 @@
+Algoritmo "CNH"
+
+Var
+   a, an, res: inteiro
+
+Inicio
+   escreval("----------------------")
+   escreval("       Status         ")
+   escreval("----------------------")
+   escreval("Ano atual(yyyy): ")
+   leia(a)
+   escreval("Ano de nascimento (yyyy): ")
+   leia(an)
+   escreval("----------------------")
+   res <- (a - an)
+   escreval("Você tem ", res, " anos, sendo assim,")
+   se (res >= 18) entao
+      escreval("você possui idade para fazer sua CNH.")
+   senao
+      escreval("infelizmente você não possui a idade para fazer a CNH.")
+   FimSe
+
+Fimalgoritmo
