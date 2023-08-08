@@ -1,0 +1,15 @@
+Algoritmo "juros_emprestimo"
+
+Var
+   v, j, em, p: real
+
+Inicio
+   escreval("Qual o valor você precisa?")
+   leia(v)
+   j <-((v * 20 / 100) + v )
+   escreval("Em quantas vezes gostaria de parcelar o valor do empréstimo?")
+   leia(em)
+   p <-(j / em)
+   escreval("Você irá pagar o empréstimo em ",em, " parcelas de R$ ",p:5:2)
+
+Fimalgoritmo
