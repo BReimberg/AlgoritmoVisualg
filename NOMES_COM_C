@@ -1,0 +1,27 @@
+Algoritmo "nomes_com_c"
+//só importa quem começa com "C"
+
+Var
+   nome: caractere
+   soc: vetor[1..5] de caractere
+   c, tot: inteiro
+
+Inicio
+      tot <- 0
+      Para c <- 1 ate 5 faca
+           escreva("Digite seu nome: ")
+           leia(nome)
+           Se (Copia(Maiusc(nome), 1, 1) = "C") entao
+              tot <- tot + 1
+              soc[tot] <- nome
+           FimSe
+      FimPara
+      LimpaTela
+      
+      escreval("LISTAGEM FINAL")
+      escreval("=================")
+      Para c <- 1 ate tot faca
+           escreval(soc[c])
+      FimPara
+
+Fimalgoritmo
