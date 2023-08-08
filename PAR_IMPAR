@@ -1,0 +1,15 @@
+Algoritmo "par_impar"
+
+Var
+   n: inteiro
+
+Inicio
+   escreval("Digite um número: ")
+   leia(n)
+   Se (n % 2 = 0) entao
+      escreval("O número ", n, " é PAR")
+   senao
+      escreval("O número ", n, " é IMPAR")
+   FimSe
+
+Fimalgoritmo
