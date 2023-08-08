@@ -1,0 +1,11 @@
+Algoritmo "codigo_nome"
+
+Var
+   nome: caractere
+
+Inicio
+   escreva("Qual o seu nome? ")
+   leia(nome)
+   escreval("Olá ", nome, ", é um prazer te conhecer!")
+
+Fimalgoritmo
