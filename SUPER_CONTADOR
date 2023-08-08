@@ -1,0 +1,32 @@
+Algoritmo "super_contador"
+
+Var
+   i, f, cont: inteiro
+
+Inicio
+    escreval("=======================")
+    escreval(" CONTAGEM INTELIGENTE  ")
+    escreval("=======================")
+    escreva("Inicio: ")
+    leia(i)
+    escreval("-----------------------")
+    escreva("Fim: ")
+    leia(f)
+    escreval("-----------------------")
+    escreval("    C O N T A N D O    ")
+    escreval("-----------------------")
+    Se (f > i) entao
+       cont <- i
+       Enquanto (cont <= f) faca
+                escreva(cont, "...")
+                cont <- cont + 1
+       FimEnquanto
+    senao
+         cont <- i
+         Enquanto (cont >= f) faca
+                  escreva (cont, "...")
+                  cont <- cont -1
+         FimEnquanto
+    FimSe
+
+Fimalgoritmo
