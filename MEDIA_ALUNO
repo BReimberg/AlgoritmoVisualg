@@ -1,0 +1,51 @@
+Algoritmo "media_de_aluno"
+
+Var
+   n1, n2, media: real
+//média A: de 10 a 9;
+//média B: de 8 a 7;
+//média C: de 6 a 5;
+//média D: de 4 a 3;
+//média E: de 2 a 1;
+//média F: 0
+Inicio
+     escreval("-----------------------")
+     escreval("    BOLETIM ESCOLAR    ")
+     escreval("-----------------------")
+     escreva("Primeira Nota: ")
+     leia(n1)
+     escreva("Segunda Nota: ")
+     leia(n2)
+     escreval("-----------------------")
+     media <- (n1+n2)/2
+     Se (media >= 9) e (media <= 10) entao
+        escreval("MÉDIA: ", media)
+        escreval("APROVEITAMENTO: A")
+     senao
+          Se (media >= 7) e (media <= 8) entao
+             escreval("MÉDIA: ", media)
+             escreval("APROVEITAMENTO: B")
+          senao
+               Se (media >= 5) e (media <= 6) entao
+                  escreval("MÉDIA: ", media)
+                  escreval("APROVEITAMENTO: C")
+               senao
+                    Se (media >= 3) e (media <= 4) entao
+                       escreval("MÉDIA: ", media)
+                       escreval("APROVEITAMENTO: D")
+                    senao
+                         Se (media >= 1) e (media <= 2)
+                            escreval("MÉDIA: ", media)
+                            escreval("APROVEITAMENTO: E")
+                         senao
+                              Se (media = 0)
+                                 escreval("Média: ", media)
+                                 escreval("APROVEITAMENTO: F")
+                              FimSe
+                         FimSe
+                    FimSe
+               FimSe
+          FimSe
+     FimSe
+
+Fimalgoritmo
