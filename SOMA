@@ -1,0 +1,16 @@
+Algoritmo "soma_"
+
+Var
+
+   n1, n2, soma: inteiro
+
+Inicio
+
+   Escreval("Digite um número: ")
+   Leia(n1)
+   Escreval("Digite um número: ")
+   Leia(n2)
+   soma <- n1+n2
+   Escreval("O resultado da soma ", n1, " + ", n2, " é igual a ", soma)
+
+Fimalgoritmo
