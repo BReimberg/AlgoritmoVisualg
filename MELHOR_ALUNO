@@ -1,0 +1,31 @@
+Algoritmo "melhor_aluno"
+
+Var
+   total, cont: inteiro
+   nota, maiornota : real
+   nome, melhoraluno: caractere
+
+Inicio
+    escreval("================")
+    escreval("    ESCOLA X    ")
+    escreval("================")
+    escreva("Quantos alunos a turma possui? ")
+    leia(total)
+    cont <- 1
+    Enquanto (cont <= total) faca
+             escreval("--------------")
+             escreval("ALUNO ", cont)
+             escreval("Nome do aluno: ")
+             leia(nome)
+             escreval("Nota de ", nome, ": ")
+             leia(nota)
+             Se (nota > maiornota) entao
+                maiornota <- nota
+                melhoraluno <- nome
+             FimSe
+             cont <- cont + 1
+    FimEnquanto
+    escreval("================")
+    escreval("O melhor aproveitamento foi de ", melhoraluno, " com nota ", maiornota:3:1, ".")
+
+Fimalgoritmo
