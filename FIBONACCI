@@ -1,0 +1,19 @@
+Algoritmo "fibonacci"
+// Algoritmo para mostrar os 15 primeiros termos de uma serie de
+// Fibonacci (0,1,1,2,3,5,8,...)
+
+Var
+   t1, t2, t3, c: inteiro
+
+Inicio
+    t1 <- 0
+    escreva(t1)
+    t2 <- 1
+    escreva(t2)
+    Para c := 3 ate 15 faca
+         t3 := t1 + t2
+         escreva(t3)
+         t1 := t2
+         t2 := t3
+    FimPara
+Fimalgoritmo
