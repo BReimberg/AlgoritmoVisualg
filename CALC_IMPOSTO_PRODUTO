@@ -1,0 +1,12 @@
+Algoritmo "calculo_imposto_produto"
+
+Var
+   p, i: real
+
+Inicio
+   escreval("Qual o valor do produto? ")
+   leia(p)
+   i <- (p * 60) / 100
+   escreval("O valor do imposto sobre esse produto é US$ ",i:5:2)
+
+Fimalgoritmo
