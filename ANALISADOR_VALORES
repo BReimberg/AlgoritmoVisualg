@@ -1,0 +1,33 @@
+Algoritmo "analisador_valores"
+
+Var
+   s, c, di5, nul, spar, n: inteiro
+   m: real
+
+Inicio
+     s <- 0
+     di5 <- 0
+     nul <- 0
+     spar <- 0
+     Para c <- 1 ate 15 faca
+          escreva("Digite o ", c, "o. valor: ")
+          leia(n)
+          s <- s + n
+          Se (n % 5 = 0) entao
+             di5 <- di5 +1
+          FimSe
+          se (n = 0) entao
+             nul <- nul + 1
+          FimSe
+          Se (n % 2 = 0) entao
+             spar <- spar +1
+          FimSe
+     FimPara
+     m <- s / (c - 1)
+     escreval("A soma entre os valores é ", s, ".")
+     escreval("A média entre os valores é ", m:5:1, ".")
+     escreval("Valores divisíveis por cinco: ", di5, ".")
+     escreval("Valosres nulos: ", nul, ".")
+     escreval("A soma dos valores pares é ", spar, ".")
+
+Fimalgoritmo
