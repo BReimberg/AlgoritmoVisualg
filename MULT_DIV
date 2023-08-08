@@ -1,0 +1,17 @@
+Algoritmo "multiplicacao_divisao"
+
+Var
+
+   n, d, t: real
+
+Inicio
+
+   escreva("Digite um número: ")
+   leia(n)
+   d <- (n * 2)
+   t <- (n / 3)
+   escreval("----------------------------")
+   escreval("O dobro de ", n, " é ", d)
+   escreval("A terça parte de ", n, " é ", t)
+
+Fimalgoritmo
