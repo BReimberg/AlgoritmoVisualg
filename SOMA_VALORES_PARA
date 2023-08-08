@@ -1,0 +1,27 @@
+Algoritmo "somar_valores_PARA"
+
+Var
+   n, c, s: inteiro
+
+Inicio
+//soma usando "enquanto"
+    c <- 1
+    s <- 0
+    Enquanto (c <= 5) faca
+         escreval("Digite um valor: ")
+         leia(n)
+         s <- s + n
+         c <- c + 1
+    FimEnquanto
+    escreval("A soma dos valores é ", s)
+
+//soma usando "para"
+       s <- 0
+       Para c <- 1 ate 5 faca
+           escreval("Digite um valor: ")
+           leia(n)
+           s <- s + n
+       FimPara
+       escreval("A soma dos valores é ", s)
+
+Fimalgoritmo
