@@ -1,0 +1,24 @@
+Algoritmo "numeros_pares_para"
+
+Var
+   c, n: inteiro
+
+Inicio
+//contagem de 0 até o número que o usuário escolher
+   escreva("Digite um valor: ")
+   leia(n)
+   Para c <- 0 ate n passo 2 faca
+        escreval(c)
+   FimPara
+
+//contagem do valor que o usuário quer até 0
+   escreva("Digite um valor: ")
+   leia(n)
+   Se (n % 2 = 1) entao
+      n <- n - 1
+   FimSe
+   Para c <- n ate 0 passo -2 faca
+        escreval(c)
+   FimPara
+
+Fimalgoritmo
