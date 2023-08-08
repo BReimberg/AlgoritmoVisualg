@@ -1,0 +1,43 @@
+Algoritmo "escolhendo_pessoas"
+//quantos são homens, quais tem mais de 18 anos, cabelo castanho;
+//quantas mulheres, com idade de 25 e 30 anos, cabelo loiro;
+
+Var
+  sexo, resp: caractere
+  idade, cabelo, totm18, totf25: inteiro
+
+Inicio
+    Repita
+          LimpaTela
+          escreval("===========================")
+          escreval("     SELETOR DE PESSOAS    ")
+          escreval("===========================")
+          escreval("Qual o sexo? [m/f] ")
+          leia(sexo)
+          escreval("Qual a idade? ")
+          leia(idade)
+          escreval("Qual a cor de cabelo? ")
+          escreval("---------------------")
+          escreval("[1] Preto")
+          escreval("[2] Loiro")
+          escreval("[3] Ruivo")
+          escreval("[4] Castanho")
+          escreval("[5] Branco")
+          leia(cabelo)
+          Se (sexo = "m") e (idade > 18) e (cabelo = 4) entao
+             totm18 <- totm18 + 1
+          FimSe
+          Se (sexo = "f") e (idade >= 25) e (idade <= 30) e (cabelo = 2) entao
+             totf25 <- totf25 +1
+          FimSe
+          escreva("Quer continuar? [s/n]")
+          leia(resp)
+    Ate(resp = "n")
+    LimpaTela
+    escreval("=========================")
+    escreval("     RESULTADO FINAL     ")
+    escreval("=========================")
+    escreval("Total de homens com mais de 18 anos e cabelos castanhos ", totm18, ".")
+    escreval("Total de mulheres entre 25 e 30 anos e cabelos loiros ", totf25, ".")
+
+Fimalgoritmo
