@@ -1,0 +1,39 @@
+Algoritmo "teste_repeticao_tabuada"
+
+Var
+  cont, n, r: inteiro
+  resp: caractere
+
+Inicio
+     escreval("===================")
+     escreval("       TESTE       ")
+     escreval("===================")
+     cont <- 1
+     Repita
+           escreval(cont)
+           cont <- cont + 1
+     Ate (cont > 5)
+     escreval("===================")
+
+//simular tabuada
+     cont <- 1
+     n <- 7
+     Repita
+           r <- n * cont
+           escreval(n, " X ", cont, " = ", r)
+           cont <- cont + 1
+     Ate (cont > 10)
+     escreval("===================")
+     
+//simular tabuada que o usuário desejar
+     cont <- 1
+     escreva("Qual tabuada quer ver? ")
+     leia(n)
+     Repita
+           r <- n * cont
+           escreval(n, " X ", cont, " = ", r)
+           cont <- cont + 1
+     Ate (cont > 10)
+     escreval("===================")
+
+Fimalgoritmo
