@@ -1,0 +1,9 @@
+Algoritmo "Ola_mundo"
+//Todo mundo começa de algum lugar...
+
+Var
+
+Inicio
+   escreva("Olá, Mundo!")
+
+Fimalgoritmo
