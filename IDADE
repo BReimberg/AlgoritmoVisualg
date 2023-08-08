@@ -1,0 +1,21 @@
+Algoritmo "idade"
+
+Var
+   aa, an, idade: inteiro
+
+Inicio
+
+   escreval("Em que ano nós estamos?")
+   leia(aa)
+   escreval("Em que ano você nasceu?")
+   leia(an)
+   idade <- (aa - an)
+   escreval("-----------------------------------------")
+   escreval("Você tem ", idade, " anos de idade em ", aa," . ")
+   Se (idade >= 18) então
+      escreval("Você já atingiu a maioridade!")
+   Senao
+      escreval("Você ainda é menor de idade.")
+   FimSe
+
+Fimalgoritmo
