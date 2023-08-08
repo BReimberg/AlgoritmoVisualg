@@ -1,0 +1,24 @@
+Algoritmo "procedimento_por_valor"
+
+Var
+ x, y: inteiro
+
+Procedimento soma (a, b: inteiro)
+inicio
+      escreval("Recebi o valor ",a)
+      escreval("Recebi o valor ",b)
+      escreval("A soma entre os dois é ",a + b)
+FimProcedimento
+
+Inicio
+//    x <- 5
+//     y<- 3
+//     soma (x, y)
+      escreva("Digite o valor de A: ")
+      leia(x)
+      escreva("Digite o valor de B: ")
+      leia(y)
+      escreval("--------------------")
+      soma (x, y)
+
+Fimalgoritmo
