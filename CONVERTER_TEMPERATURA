@@ -1,0 +1,13 @@
+Algoritmo "converter_temperatura"
+
+Var
+   f, conv: real
+
+Inicio
+   escreval("Qual a temperatura atual?")
+   leia(f)
+   conv <- (f - 32) / 1.8
+   //:4:1 números para mostrar no resultado, sendo um número após a vírgula.
+   escreval("A temperatura em graus celsius é ", conv:4:1)
+
+Fimalgoritmo
