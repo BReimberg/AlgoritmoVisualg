@@ -1,0 +1,18 @@
+Algoritmo "real_dolar"
+
+Var
+   R, D: real
+   c, q: inteiro
+Inicio
+   c <- 1
+   escreva("Quantas vezes você quer converter? ")
+   leia(q)
+   enquanto (c <= q) faca
+            escreval("Quantos reais eu tenho? ")
+            leia(R)
+            D <- (R / 5.24)
+            escreval("Posso ter US$ ", D)
+            c <- c + 1
+   FimEnquanto
+
+Fimalgoritmo
