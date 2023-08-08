@@ -1,0 +1,36 @@
+Algoritmo "opcoes"
+
+Var
+    d: inteiro
+    valor: real
+
+Inicio
+     escreval("-------------------------")
+     escreval("          DOAÇÃO         ")
+     escreval("-------------------------")
+     escreval("Muito obrigada por ajudar")
+     escreval("[1] para doar R$10 ")
+     escreval("[2] para doar R$25 ")
+     escreval("[3] para doar R$50 ")
+     escreval("[4] para doar outros valores")
+     escreval("[5] para cancelar ")
+     leia(d)
+     escolha d
+             Caso 1
+                  valor <- 10
+             Caso 2
+                  valor <- 25
+             Caso 3
+                  valor <- 50
+             Caso 4
+                  escreva("Qual o valor da doação? R$")
+                  leia(valor)
+             Caso 5
+                  valor <- 0
+     FimEscolha
+     escreval("---------------------------")
+     escreval("SUA DOAÇÃO FOI DE R$", valor)
+     escreval("MUITO OBRIGADO!")
+     escreval("---------------------------")
+
+Fimalgoritmo
