@@ -1,0 +1,18 @@
+Algoritmo "nome_salario"
+
+Var
+   nome: caractere
+   sal: real
+
+Inicio
+
+   escreval("Qual o seu nome? ")
+   leia(nome)
+   escreval("Qual o valor do seu salário? ")
+   leia(sal)
+   escreval("---------------------------------")
+   escreval("Nome do(a) funcionário(a): ", nome)
+   escreval("Salário: ", sal, " reais")
+   escreval("Funcionário(a) ", nome, " tem um salário de ", sal, " reais em Junho.")
+
+Fimalgoritmo
