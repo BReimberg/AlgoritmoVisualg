@@ -1,0 +1,104 @@
+Algoritmo "dissecando_matrizes"
+//Dissecando Matrizes
+//matriz 4x4 e pedir para o usuário escolher:
+//[1]exibir a matriz inteira
+//[2]a diagonal principal
+//[3]triângulo superior da matriz
+//[4]triângulo inferior da matriz
+
+Var
+   m: vetor[1..4, 1..4] de inteiro
+   l, c, opcao: inteiro
+
+Procedimento ExibirMatriz()
+inicio
+      Para l <- 1 ate 4 faca
+          Para c <- 1 ate 4 faca
+              escreva(m[l,c]:4)
+          FimPara
+          escreval()
+      FimPara
+FimProcedimento
+
+Procedimento DiagonalPrincipal()
+var
+   tp: inteiro
+inicio
+      Para l <- 1 ate 4 faca
+           escreval(m[l,l]:4)
+           Para tp <- 1 ate l faca
+                escreva("    ")
+           FimPara
+      FimPara
+FimProcedimento
+
+Procedimento TrianguloSuperior()
+var
+   ts: inteiro
+inicio
+      Para l <- 1 ate 3 faca
+           escreva("    ")
+           Para c <- l+1 ate 4 faca
+                escreva(m[l,c]:4)
+           FimPara
+           escreval()
+           Para ts <- 1 ate l faca
+                escreva("    ")
+           FimPara
+      FimPara
+      escreval()
+FimProcedimento
+
+Procedimento TrianguloInferior()
+inicio
+      Para l <- 2 ate 4 faca
+           escreval()
+           Para c <- 1 ate l-1 faca
+                escreva(m[l,c]:4)
+           FimPara
+      FimPara
+      escreval()
+FimProcedimento
+
+Inicio
+     escreval("=============================================")
+     escreval("    M A T R I Z : Q U A R T A  O R D E M     ")
+     escreval("=============================================")
+     Para l <- 1 ate 4 faca
+          Para c <- 1 ate 4 faca
+               escreva("Digite o valor para a posição [", l, ",", c, "]: ")
+               leia(m[l,c])
+          FimPara
+     FimPara
+     LimpaTela
+     Repita
+           escreval()
+           escreval("================================")
+           escreval("        MENU MATRIZ 4X4         ")
+           escreval("================================")
+           escreval("[1] Exibir Matriz Inteira")
+           escreval("[2] Exibir a Diagonal Pincipal")
+           escreval("[3] Exibir o Triângulo Superior")
+           escreval("[4] Exibir o Triângulo Inferior")
+           escreval("[5] Cancelar pesquisa")
+           Repita
+                 escreval("================================")
+                 escreva("===>> O P Ç Ã O: ")
+                 leia(opcao)
+           Ate(opcao >= 1) e (opcao <= 5)
+           LimpaTela
+           Escolha opcao
+                   Caso 1
+                        ExibirMatriz()
+                   Caso 2
+                        DiagonalPrincipal()
+                   Caso 3
+                        TrianguloSuperior()
+                   Caso 4
+                        TrianguloInferior()
+                   Caso 5
+                        escreval("[ENCERRANDO PROGRAMA...]")
+           FimEscolha
+     Ate(opcao = 5)
+
+Fimalgoritmo
