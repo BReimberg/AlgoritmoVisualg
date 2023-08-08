@@ -1,0 +1,50 @@
+Algoritmo "calculo_imc"
+
+Var
+   m, a, imc: real
+
+Inicio
+//abaixo de 17: muito abaixo do peso;
+//entre 17 e 18.5: abaixo do peso;
+//de 18.5a 25: peso ideal;
+//de 25 a 30: sobrepeso;
+//de 30 a 35: obesidade;
+//de 35 a 40: obesidade severa;
+//40 ou mais: obesidade mórbida.
+
+   escreval("Massa (Kg): ")
+   leia(m)
+   escreval("Altura (m): ")
+   leia(a)
+   //pode ser feito também: imc <- m / (a * a)
+   imc <- m / (a ^ 2)
+   escreval("O seu IMC é ", imc:5:2, ".")
+   Se (imc < 17) entao
+      escreval("Muito abaixo do peso")
+   senao
+        Se (imc >=17) e (imc <=18.5) entao
+           escreval("Abaixo do peso")
+        senao
+             Se (imc >= 18.5) e (imc <= 25) entao
+                escreval("Peso ideal")
+             senao
+                  Se (imc >= 25) e (imc <= 30) entao
+                     escreval("Sobrepeso")
+                  senao
+                       Se (imc >= 30) e (imc <= 35) entao
+                          escreval("Obesidade")
+                       senao
+                            Se (imc >= 34) e (imc <= 40) entao
+                               escreval("Obesidade severa")
+                            senao
+                                 Se(imc >= 40) entao
+                                   escreval("Obesidade mórbida")
+                                 FimSe
+                            FimSe
+                       FimSe
+                  FimSe
+             FimSe
+        FimSe
+   FimSe
+
+Fimalgoritmo
