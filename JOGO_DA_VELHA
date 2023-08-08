@@ -1,0 +1,115 @@
+Algoritmo "jogo_da_velha"
+
+Var
+   v: vetor[1..3, 1..3] de caractere
+   l, c, cont, po: inteiro
+   simb: caractere
+   r: logico
+   
+Procedimento MostrarVelha()
+inicio
+   escreval("+---+---+---+")
+   Para l <- 1 ate 3 faca
+      Para c <- 1 ate 3 faca
+         escreval("|  ", v[l,c]:1)
+      FimPara
+      escreval("|")
+      escreval()
+      escreval("+---+---+---+")
+   FimPara
+
+FimProcedimento
+
+Procedimento MudaJogador()
+Inicio
+   Se (simb = "X") entao
+       simb <- "O"
+   senao
+       simb <- "X"
+   FimSe
+FimProcedimento
+
+Funcao Jogar(s: caractere; p: inteiro): logico
+var mudou: logico
+Inicio
+   mudou <- falso
+   Para l <- 1 ate 3 faca
+      Para c <- 1 ate 3 faca
+         Se(v[l,c] = NumpCarac(p)) entao
+            v[l,c] <- s
+            mudou <- verdadeiro
+         FimSe
+      FimPara
+   FimPara
+   Retorne mudou
+FimFuncao
+
+Funcao TerminouVelha(): logico
+var
+   terminou: logico
+   ocorr: inteiro
+inicio
+   terminou <- falso
+   //Jogos em linha
+   Para l <- 1 ate 3 faca
+      Se (v[l,1] = v[l,2]) e (v[l,2] = v[l,3]) entao
+          terminou <- verdadeiro
+      FimSe
+   FimPara
+   //Jogos em coluna
+   Para c <- 1 ate 3
+      Se (v[1,c] = v[2,c) e (v[2,c] = v[3,c]) entao
+          terminou <- verdadeiro
+      FimSe
+   FimPara
+   //Jogos em Diagonal
+   Se (v[1,1] = v[2,2]) e (v[2,2] = v[3,3]) entao
+       terminou <- verdadeiro
+   FimSe
+   Se (v[1,3] = v[2,2]) e (v[2,2] = v[3,1]) entao
+       terminou <- verdadeiro
+   FimSe
+      
+   //Jogo em velha
+   ocorr <- 0
+   Para l <- 1 ate 3 faca
+      Para c <- 1 ate 3 faca
+         Se (v[l,c] <> "X") e (v[l,c] <> "O") entao
+             ocorr <- ocorr + 1
+         FimSe
+      FimPara
+   FimPara
+      Se (ocorr = 0) entao
+         terminou <- verdadeiro
+      FimSe
+
+   //retornar se o jogo acabar ou não
+   Retorne terminou
+FimFuncao
+
+inicio
+   cont <- 1
+   simb <- "X"
+   Para l <- 1 ate 3 faca
+      Para c <- 1 ate 3 faca
+         v[l,c] <- NumpCarac(cont)
+         cont <- cont + 1
+      FimPara
+   FimPara
+   MostrarVelha()
+   Repita
+      Repita
+      escreval("Vai jogar [", simb:1, "] em qual posição? ")
+      leia(po)
+      r <- Jogar(simb, po))
+      Se(r = falso) entao
+         escreval("JOGADA INVALIDA!")
+      FimSe
+      Ate(r = verdadeiro)
+      MudaJogador()
+      LimpaTela
+      MostraVelha()
+   Ate(TerminouVelha() = verdadeiro)
+   escreval("JOGO FINALIZADO!!!")
+
+Fimalgoritmo
