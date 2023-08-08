@@ -1,0 +1,14 @@
+Algoritmo "soma"
+
+Var
+   n1, n2, s: inteiro
+
+Inicio
+   escreval("Digite um valor inteiro: ")
+   leia(n1)
+   escreval("Digite outro valor inteiro: ")
+   leia(n2)
+   s <- (n1 + n2)
+   escreval("A soma entre ", n1, " + ", n2, " é igual a ",s, " .")
+
+Fimalgoritmo
